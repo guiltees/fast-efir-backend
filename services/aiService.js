@@ -5,8 +5,8 @@
  */
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
-const BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-1.5-flash-latest';
+const BASE = 'https://generativelanguage.googleapis.com/v1/models';
 
 async function callGemini(prompt, { responseMimeType } = {}) {
   if (!GEMINI_API_KEY) {
