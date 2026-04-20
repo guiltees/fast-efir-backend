@@ -20,7 +20,7 @@ async function callGemini(prompt, { responseMimeType } = {}) {
       temperature: 0.4,
       topP: 0.95,
       maxOutputTokens: 2048,
-      ...(responseMimeType ? { responseMimeType } : {})
+      
     }
   };
   const resp = await fetch(url, {
