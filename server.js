@@ -13,6 +13,8 @@ const routingRoutes = require('./routes/routing');
 const escalationsRoutes = require('./routes/escalations');
 const filesRoutes = require('./routes/files');
 const notificationsRoutes = require('./routes/notifications');
+const scamRoutes = require('./routes/scam');
+const alertsRoutes = require('./routes/alerts');
 
 const errorHandler = require('./middleware/errorHandler');
 const { initScheduler } = require('./services/notificationScheduler');
@@ -48,6 +50,8 @@ app.use('/routing', routingRoutes);
 app.use('/escalations', escalationsRoutes);
 app.use('/files', filesRoutes);
 app.use('/notifications', notificationsRoutes);
+app.use('/scam', scamRoutes);
+app.use('/alerts', alertsRoutes);
 
 // 404
 app.use((req, res) => res.status(404).json({ error: 'Not Found', path: req.originalUrl }));
