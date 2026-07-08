@@ -191,4 +191,3 @@ exports._debugState = async () => {
   const { rows: countRows } = await db.query('SELECT COUNT(*) as c FROM fl_pending_updates');
   return { globalHead, pending: parseInt(countRows[0].c, 10) };
 };
-ength });
