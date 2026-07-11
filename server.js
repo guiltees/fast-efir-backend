@@ -15,6 +15,7 @@ const filesRoutes = require('./routes/files');
 const notificationsRoutes = require('./routes/notifications');
 const scamRoutes = require('./routes/scam');
 const alertsRoutes = require('./routes/alerts');
+const threatsRoutes = require('./routes/threats');
 
 const errorHandler = require('./middleware/errorHandler');
 const { initScheduler } = require('./services/notificationScheduler');
@@ -52,6 +53,7 @@ app.use('/files', filesRoutes);
 app.use('/notifications', notificationsRoutes);
 app.use('/scam', scamRoutes);
 app.use('/alerts', alertsRoutes);
+app.use('/api/v1/threats', threatsRoutes);
 
 // 404
 app.use((req, res) => res.status(404).json({ error: 'Not Found', path: req.originalUrl }));

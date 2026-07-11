@@ -1,0 +1,18 @@
+{
+  "BAD_PHONE_PATTERNS": [
+    "^\\+?0{3,}",
+    "^(\\+91)?140\\d{7}$",
+    "^(\\+91)?1800\\d{6,7}$",
+    "(\\d)\\1{6,}"
+  ],
+  "MSG_KEYWORDS": [
+    "kyc", "suspended", "blocked", "verify account", "last warning",
+    "electricity bill", "your package", "parcel held", "customs",
+    "lottery", "winner", "prize", "aapki id", "otp share", "anydesk",
+    "teamviewer", "refund click", "reward point", "pan update",
+    "कष्टकर", "ओटीपी", "खाता बंद", "पैन अपडेट", "पुरस्कार"
+  ],
+  "SHORTENER_HOSTS": [
+    "bit.ly", "tinyurl.com", "t.co", "rb.gy", "cutt.ly", "shorturl.at"
+  ]
+}
